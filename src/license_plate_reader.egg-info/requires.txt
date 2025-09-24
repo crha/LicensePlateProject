@@ -1,0 +1,7 @@
+torch
+torchvision
+torchaudio
+opencv-python
+numpy
+ultralytics
+datasets<3.0.0

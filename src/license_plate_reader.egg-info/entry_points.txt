@@ -1,0 +1,2 @@
+[console_scripts]
+plate-detector = plate_detector.__main__:main

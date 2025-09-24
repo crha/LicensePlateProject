@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/license_plate_reader.egg-info/PKG-INFO
+src/license_plate_reader.egg-info/SOURCES.txt
+src/license_plate_reader.egg-info/dependency_links.txt
+src/license_plate_reader.egg-info/entry_points.txt
+src/license_plate_reader.egg-info/requires.txt
+src/license_plate_reader.egg-info/top_level.txt
+src/plate_detector/__main__.py
+test/test.py
+test/test2.py
+test/test3.py
+test/test4.py

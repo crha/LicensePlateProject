@@ -1,0 +1,26 @@
+Metadata-Version: 2.4
+Name: license-plate-reader
+Version: 0.1.0
+Summary: Simple license plate region detector using OpenCV and optional Tesseract OCR
+Author-email: Chris Rha <crha1324@gmail.com>
+License: MIT
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchvision
+Requires-Dist: torchaudio
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: ultralytics
+Requires-Dist: datasets<3.0.0
+Dynamic: license-file
+
+# LicensePlateProject
+
+## Steps to Run Code
+
+pip install uv
+uv venv
+uv sync
+uv run plate-detector '.\images\toyota example.jpg'

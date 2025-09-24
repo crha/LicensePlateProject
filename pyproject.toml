@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "license-plate-reader"
+version = "0.1.0"
+description = "Simple license plate region detector using OpenCV and optional Tesseract OCR"
+authors = [
+  { name="Chris Rha", email="crha1324@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.13"
+
+dependencies = [
+  "torch",
+  "torchvision",
+  "torchaudio",
+  "opencv-python",
+  "numpy",
+  "ultralytics",
+  "datasets<3.0.0"
+]
+
+[project.scripts]
+plate-detector = "plate_detector.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# Tell uv where to fetch the CUDA wheels
+[tool.uv.indexes]
+pytorch-cu129 = "https://download.pytorch.org/whl/cu129"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu129" }
+torchvision = { index = "pytorch-cu129" }
+torchaudio = { index = "pytorch-cu129" }
